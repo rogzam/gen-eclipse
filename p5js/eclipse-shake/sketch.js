@@ -1,19 +1,19 @@
 let canvasWidth = 1000;  // Width of the canvas
 let canvasHeight = 600;  // Height of the canvas
 
-let numCols = 17; // Number of columns
+let numCols = 22; // Number of columns
 let numRows = 12; // Number of rows
-let spacing = 66; // Spacing between dots
-let diameter = 40; // Diameter of the dots
-let rowOffset = 30; // Horizontal offset for every other row
+let spacing = 58; // Spacing between dots
+let diameter = 36; // Diameter of the dots
+let rowOffset = 18; // Horizontal offset for every other row
 
 let gridWidth = (numCols - 1) * spacing;
 let gridHeight = (numRows - 1) * spacing;
 
-let offsetX = (canvasWidth - gridWidth) / 2;
-let offsetY = (canvasHeight - gridHeight) / 2;
+let offsetX = (canvasWidth - gridWidth) ;
+let offsetY = (canvasHeight - gridHeight)/ 0.8;
 
-let frequency = 0.5; // Adjust this value to extend the peaks
+let frequency = 0.8; // Adjust this value to extend the peaks
 
 function setup() {
   createCanvas(canvasWidth, canvasHeight);
