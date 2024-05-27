@@ -1,22 +1,22 @@
 let canvasWidth = 1000;  // Width of the canvas
 let canvasHeight = 600;  // Height of the canvas
 
-let numCols = 17; // Number of columns
+let numCols = 18; // Number of columns
 let numRows = 12; // Number of rows
-let spacing = 66; // Spacing between dots
-let diameter = 40; // Diameter of the dots
-let rowOffset = 30; // Horizontal offset for every other row
+let spacing = 58; // Spacing between dots
+let diameter = 36; // Diameter of the dots
+let rowOffset = 18; // Horizontal offset for every other row
 
 let gridWidth = (numCols - 1) * spacing;
 let gridHeight = (numRows - 1) * spacing;
 
-let offsetX = (canvasWidth - gridWidth) / 2;
-let offsetY = (canvasHeight - gridHeight) / 2;
+let offsetX = (canvasWidth - gridWidth) ;
+let offsetY = (canvasHeight - gridHeight)/0.8 ;
 
 let initialOffset = 7; // Initial distance between the circles
 let animationDistance = 13; // Distance to move the circles
 let animationDuration = 1; // Duration of the animation cycle in seconds
-let pauseMiddle = .1; // Duration of the pause at the middle in seconds
+let pauseMiddle = .1;  // Duration of the pause at the middle in seconds
 let pauseEnd = 5; // Duration of the pause between loops in seconds
 
 let animationStates = []; // Array to store animation states for each pair
