@@ -1,8 +1,8 @@
-let canvasWidth = 1000 * 1.7; // Width of the canvas
-let canvasHeight = 650 * 1.7; // Increased canvas height to accommodate sliders
+let canvasWidth = 1000; // Width of the canvas
+let canvasHeight = 650; // Increased canvas height to accommodate sliders
 
 let numCols = 32; // Starting number of columns
-let numRows = 14; // Starting number of rows
+let numRows = 9; // Starting number of rows
 let spacing = 58; // Spacing between dots
 
 let rowSpacing = 58;
@@ -15,11 +15,11 @@ let rowOffset = 18; // Horizontal offset for every other row
 let whiteColor = [255, 255, 255]; // Default white circle color
 let redColor = [254, 19, 77]; // Default red circle color
 
-let sliWidth = "100px"; // Reduced width
-let sliderSpacing = canvasWidth / 11.4; // Calculate spacing for sliders
+let sliWidth = "60px"; // Reduced width
+let sliderSpacing = canvasWidth / 12; // Calculate spacing for sliders
 let sliderYPosition = canvasHeight - 35; // Y position of the sliders
 let groupWidth = 6 * sliderSpacing; // Total width of all sliders
-let startX = (canvasWidth - groupWidth) / 7; // Starting x position to center the group
+let startX = (canvasWidth - groupWidth) / 20; // Starting x position to center the group
 let circleOffset = whiteDiameter / 4; // Default offset
 
 function setup() {
@@ -34,15 +34,15 @@ function setup() {
 function draw() {
   // The draw function is not needed for continuous rendering
   fill("rgb(255,255,255)");
-  text(numCols, startX + 0 * sliderSpacing + 45, sliderYPosition + 20);
-  text(numRows, startX + 1 * sliderSpacing + 45, sliderYPosition + 20);
-  text(whiteDiameter, startX + 2 * sliderSpacing + 45, sliderYPosition + 20);
-  text(redDiameter, startX + 3 * sliderSpacing + 45, sliderYPosition + 20);
-  text(spacing, startX + 4 * sliderSpacing + 45, sliderYPosition + 20);
-  text(rowOffset, startX + 5 * sliderSpacing + 45, sliderYPosition + 20);
-  text(circleOffset, startX + 6 * sliderSpacing + 45, sliderYPosition + 20);
-  text(rowSpacing, startX + 7 * sliderSpacing + 45, sliderYPosition + 20);
-  text(colSpacing, startX + 8 * sliderSpacing + 45, sliderYPosition + 20);
+  text(numCols, startX + 0 * sliderSpacing + 25, sliderYPosition + 20);
+  text(numRows, startX + 1 * sliderSpacing + 25, sliderYPosition + 20);
+  text(whiteDiameter, startX + 2 * sliderSpacing + 25, sliderYPosition + 20);
+  text(redDiameter, startX + 3 * sliderSpacing + 25, sliderYPosition + 20);
+  text(spacing, startX + 4 * sliderSpacing + 25, sliderYPosition + 20);
+  text(rowOffset, startX + 5 * sliderSpacing + 25, sliderYPosition + 20);
+  text(circleOffset, startX + 6 * sliderSpacing + 25, sliderYPosition + 20);
+  text(rowSpacing, startX + 7 * sliderSpacing + 25, sliderYPosition + 20);
+  text(colSpacing, startX + 8 * sliderSpacing + 25, sliderYPosition + 20);
 
 
   
@@ -52,15 +52,15 @@ function drawComposition() {
   clear(0); // Clear the background for each redraw
 
   fill("rgb(255,255,255)");
-  text(numCols, startX + 0 * sliderSpacing + 45, sliderYPosition + 20);
-  text(numRows, startX + 1 * sliderSpacing + 45, sliderYPosition + 20);
-  text(whiteDiameter, startX + 2 * sliderSpacing + 45, sliderYPosition + 20);
-  text(redDiameter, startX + 3 * sliderSpacing + 45, sliderYPosition + 20);
-  text(spacing, startX + 4 * sliderSpacing + 45, sliderYPosition + 20);
-  text(rowOffset, startX + 5 * sliderSpacing + 45, sliderYPosition + 20);
-  text(circleOffset, startX + 6 * sliderSpacing + 45, sliderYPosition + 20);
-  text(rowSpacing, startX + 7 * sliderSpacing + 45, sliderYPosition + 20);
-  text(colSpacing, startX + 8 * sliderSpacing + 45, sliderYPosition + 20);
+  text(numCols, startX + 0 * sliderSpacing + 25, sliderYPosition + 20);
+  text(numRows, startX + 1 * sliderSpacing + 25, sliderYPosition + 20);
+  text(whiteDiameter, startX + 2 * sliderSpacing + 25, sliderYPosition + 20);
+  text(redDiameter, startX + 3 * sliderSpacing + 25, sliderYPosition + 20);
+  text(spacing, startX + 4 * sliderSpacing + 25, sliderYPosition + 20);
+  text(rowOffset, startX + 5 * sliderSpacing + 25, sliderYPosition + 20);
+  text(circleOffset, startX + 6 * sliderSpacing + 25, sliderYPosition + 20);
+  text(rowSpacing, startX + 7 * sliderSpacing + 25, sliderYPosition + 20);
+  text(colSpacing, startX + 8 * sliderSpacing + 25, sliderYPosition + 20);
 
   let gridWidth = (numCols - 1) * spacing;
   let gridHeight = (numRows - 1) * spacing;
